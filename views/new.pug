@@ -1,0 +1,14 @@
+extends layout
+
+
+block content
+    link(rel='stylesheet', href='/stylesheets/new.css')
+    form(method="POST" action="/new")
+        label Name
+        input(type="text" name="user" required="required")
+        label Message
+        textarea(type="text" name="content" required="required")
+        input(type="submit" value="Submit")
+
+block menu 
+    a(href="/" class="button") Go Back

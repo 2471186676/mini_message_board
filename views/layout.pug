@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= "Message Board"
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    block header
+    .headerWrapper
+      .header 
+        h Getting over it
+        p Super secret message board
+      block menu
+        a(href="/new" class="button") Add new message
+
+    block content
+
+

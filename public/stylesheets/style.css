@@ -1,8 +1,58 @@
+:root {
+	--base-color: #dad6d6;
+  --base-color-darker: #b1aeae;
+	--harmony-color: #92bfb1;
+  --harmony-color-lighter: #b2ebd9;
+	--contrast-color: #f4ac45;
+  --contrast-color-darker: #c18737;
+	--border-color: #114b5f;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 2.5vh 50px 0 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: var(--base-color);
 }
 
-a {
-  color: #00B7FF;
+.headerWrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+	background-color: var(--contrast-color);
+	border: 10px solid var(--border-color);
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.header h {
+	font-size: larger;
+	font-weight: bolder;
+}
+
+.header p {
+	margin: 0.25rem 0 0 0;
+}
+
+.button {
+	margin: 1rem 0 0 0;
+	border: 2px solid black;
+	align-items: center;
+	width: fit-content;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	margin: 0.5rem 0 0.5rem 0;
+  border-radius: 1rem;
+
+	color: black;
+	background-color: var(--contrast-color);
+	text-decoration: none;
+}
+
+.button:active {
+	text-decoration: none;
+}
+
+.button:hover{
+  background-color: var(--contrast-color-darker);
+  color: wheat;
 }

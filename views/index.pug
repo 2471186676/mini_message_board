@@ -1,0 +1,14 @@
+extends layout
+
+
+block content
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
+  .boxWrapper
+    -for(let i = 0; i < messages.length; i++)
+      div.box
+        h= messages[i].user + " said..."
+        b= messages[i].text
+        f= messages[i].added.toLocaleDateString("en-GB")
+
+  
