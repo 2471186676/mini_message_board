@@ -1,9 +1,9 @@
 extends layout
 
-
-block content
+block css 
   link(rel='stylesheet', href='/stylesheets/index.css')
 
+block content
   .boxWrapper
     -for(let i = 0; i < messages.length; i++)
       div.box

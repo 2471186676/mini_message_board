@@ -1,8 +1,9 @@
 extends layout
 
+block css 
+    link(rel='stylesheet', href='/stylesheets/new.css')
 
 block content
-    link(rel='stylesheet', href='/stylesheets/new.css')
     form(method="POST" action="/new")
         label Name
         input(type="text" name="user" required="required")
